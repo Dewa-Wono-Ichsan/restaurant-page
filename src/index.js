@@ -1,5 +1,1 @@
-import {greet} from './greeting'
-
-let meetAndGreet = greet + 'and Dewa!'
-
-console.warn(meetAndGreet);
+import {navHome} from "./nav-home"
