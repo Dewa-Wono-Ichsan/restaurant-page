@@ -14,6 +14,14 @@ module.exports = {
       template: "./src/template.html",
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      }
+    ],
+  },
   devtool: "eval-source-map",
   devServer: {
     watchFiles: ["./src/template.html"],
