@@ -1,3 +1,3 @@
-import {navHome, text as homeMenuText} from "./nav-home.js"
+import {navHome, text as homeText} from "./nav-home.js"
 
-navHome.addEventListener("click", homeMenuText)
+navHome.addEventListener("click", homeText)
