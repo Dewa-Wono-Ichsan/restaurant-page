@@ -17,6 +17,17 @@ image2.src = friedLeleImage
 function text(){
     containerContent.textContent = 'Choose Your Food to Buy and Eat'
     containerContent.appendChild(listMenu)
+    
+    for (let index = 0; index < 3; index++) {
+        
+        const menu = document.createElement('div')
+        menu.classList.toggle('menu')
+        listMenu.appendChild(menu)
+        
+    }
+
+    document.querySelector('.menu').append(image1)
+
 }
 
 export{navMenu, text}
