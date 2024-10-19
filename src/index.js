@@ -1,3 +1,4 @@
+import './styles.css'
 import {navHome, text as homeText} from "./nav-home.js"
 import {navMenu, text as manuText} from "./nav-menu.js"
 import {navNews, text as newsText} from "./nav-news.js"
