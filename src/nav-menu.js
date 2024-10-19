@@ -9,12 +9,18 @@ const containerContent = document.querySelector("#content")
 const listMenu = document.createElement('div')
 listMenu.classList.toggle('list-menu')
 
+const menuExplain1 = document.createElement('div')
+menuExplain1.textContent = '1. rendang'
 const image1 = document.createElement('img')
 image1.src = rendangImage
 
+const menuExplain2 = document.createElement('div')
+menuExplain2.textContent = '2. fried lele'
 const image2 = document.createElement('img')
 image2.src = friedLeleImage
 
+const menuExplain3 = document.createElement('div')
+menuExplain3.textContent = '3. fried rice'
 const image3 = document.createElement('img')
 image3.src = friedRiceImage
 
@@ -38,9 +44,9 @@ function text(){
     const menu2 = document.querySelector('.menu:nth-child(2)')
     const menu3 = document.querySelector('.menu:nth-child(3)')
     
-    menu1.appendChild(image1)
-    menu2.appendChild(image2)
-    menu3.appendChild(image3)
+    menu1.append(menuExplain1,image1)
+    menu2.append(menuExplain2,image2)
+    menu3.append(menuExplain3,image3)
 }
 
 export{navMenu, text}
