@@ -22,12 +22,16 @@ function text(){
     containerContent.textContent = 'Choose Your Food to Buy and Eat'
     containerContent.appendChild(listMenu)
     
-    for (let index = 0; index < 3; index++) {
-        
-        const menu = document.createElement('div')
-        menu.classList.toggle('menu')
-        listMenu.appendChild(menu)
-        
+    const arrMenu = document.querySelectorAll('.menu')
+    if(arrMenu.length === 0){
+
+        for (let index = 0; index < 3; index++) {
+            
+            const menu = document.createElement('div')
+            menu.classList.toggle('menu')
+            listMenu.appendChild(menu)
+            
+        }
     }
 
     const menu1 = document.querySelector('.menu:first-child')
