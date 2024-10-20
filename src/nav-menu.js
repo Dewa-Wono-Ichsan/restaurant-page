@@ -44,9 +44,12 @@ function text(){
     const menu2 = document.querySelector('.menu:nth-child(2)')
     const menu3 = document.querySelector('.menu:nth-child(3)')
     
-    menu1.append(menuExplain1,image1)
-    menu2.append(menuExplain2,image2)
-    menu3.append(menuExplain3,image3)
+    menu1.appendChild(menuExplain1)
+    menu1.appendChild(image1)
+    menu2.appendChild(menuExplain2)
+    menu2.appendChild(image2)
+    menu3.appendChild(menuExplain3)
+    menu3.appendChild(image3)
 }
 
 export{navMenu, text}
